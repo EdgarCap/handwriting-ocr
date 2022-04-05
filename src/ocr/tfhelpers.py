@@ -17,8 +17,7 @@ class Model():
         """
         self.input = input_name + ":0"
         self.graph = tf.Graph()
-        aaoooo
-#        self.sess = tf.Session(graph=self.graph)
+###        self.sess = tf.Session(graph=self.graph)
         self.sess = tf.compat.v1.Session(graph=self.graph)
         with self.graph.as_default():
             saver = tf.train.import_meta_graph(loc + '.meta', clear_devices=True)
